@@ -47,10 +47,10 @@ export default function FAQ() {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-4xl md:text-5xl font-semibold text-[#0B1021] leading-[1.15] tracking-[-0.02em] text-center mb-4">
+                <h2 className="text-4xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] text-center mb-4">
                     Got Questions?
                 </h2>
-                <p className="text-sm font-medium text-[#4A5578] leading-[1.7] text-center mb-10">
+                <p className="text-sm font-normal text-[#4A5578] leading-[1.7] text-center mb-10">
                     We've worked with 30+ businesses — so we know what comes up before your first call. Here's what you should know.
                 </p>
 
@@ -59,7 +59,7 @@ export default function FAQ() {
                     {faqs.map((faq, i) => (
                         <div
                             key={i}
-                            className="bg-white rounded-xl px-6 py-5 cursor-pointer transition-all duration-200"
+                            className="bg-white rounded-lg px-6 py-5 cursor-pointer transition-all duration-200"
                             style={{
                                 border: '1px solid #e2e2e2',
                                 boxShadow: '0 10px 24px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.04), inset 0 1px 0 rgba(255,255,255,0.9)',
@@ -67,13 +67,13 @@ export default function FAQ() {
                             onClick={() => toggle(i)}
                         >
                             <div className="flex items-center justify-between gap-4">
-                                <p className="text-sm font-semibold text-[#0B1021]">{faq.question}</p>
-                                <span className="text-[#0096FF] text-lg shrink-0">
+                                <p className="text-base font-medium text-[#0B1021]">{faq.question}</p>
+                                <span className="text-[#0096FF] text-2xl shrink-0">
                                     {openIndex === i ? '−' : '+'}
                                 </span>
                             </div>
                             {openIndex === i && (
-                                <p className="mt-3 text-sm font-medium text-[#4A5578] leading-[1.7]">
+                                <p className="mt-3 text-base font-normal text-[#4A5578] leading-[1.5]">
                                     {faq.answer}
                                 </p>
                             )}

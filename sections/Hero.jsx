@@ -9,13 +9,13 @@ export default function Hero() {
             {/* Badge */}
             <div className="flex items-center justify-center gap-2 mb-8">
                 <span className="w-2 h-2 mb-0.5 bg-[#4040FF]" />
-                <span className="text-xs font-semibold tracking-[0.12em] uppercase text-[#4A5578]">
+                <span className="text-xs font-medium tracking-[0.12em] uppercase text-[#4A5578]">
                     The Growth Secrets Behind 30+ Scaled Businesses
                 </span>
             </div>
 
             {/* Heading */}
-            <h1 className="text-6xl md:text-7xl font-medium leading-[1.1] tracking-[-0.04em] text-[#0B1021]">
+            <h1 className="text-6xl md:text-7xl font-normal leading-[1.1] tracking-[-0.03em] text-[#0B1021]">
                 Growth That Scales <br /> Without the Burnout
             </h1>
 
@@ -29,13 +29,13 @@ export default function Hero() {
             <div className="my-8 flex items-center gap-4 flex-wrap justify-center">
                 <Link
                     href="/contact"
-                    className="px-7 py-3.5 rounded-sm text-sm font-semibold text-white bg-[#4040FF] hover:bg-[#2e2ee0] transition-all shadow-[0_8px_25px_rgba(64,64,255,0.35)] hover:-translate-y-0.5 border border-[#4040FF] border-b-[3px] border-b-[#2e2ee0] active:border-b active:translate-y-[2px]"
+                    className="px-7 py-3.5 rounded-lg text-sm font-medium text-white bg-[#4040FF] hover:bg-[#2e2ee0] transition-all shadow-[0_8px_25px_rgba(64,64,255,0.35)] hover:-translate-y-0.5 border border-[#4040FF] border-b-[3px] border-b-[#2e2ee0] active:border-b active:translate-y-[2px]"
                 >
-                    Discover the Secret — Free 15-Min Call
+                    Book a Free Call
                 </Link>
                 <Link
                     href="/#results"
-                    className="px-7 py-3.5 rounded-sm text-sm font-semibold text-[#0B1021] bg-white border border-neutral-300 border-b-[3px] hover:bg-neutral-100 transition-all  active:border-b active:translate-y-[2px]"
+                    className="px-7 py-3.5 rounded-lg text-sm font-medium text-[#0B1021] bg-white border border-neutral-300 border-b-[3px] hover:bg-neutral-100 transition-all  active:border-b active:translate-y-[2px]"
                 >
                     See the Results
                 </Link>

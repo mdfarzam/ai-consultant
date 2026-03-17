@@ -75,13 +75,13 @@ export default function Method1() {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-4xl md:text-5xl font-semibold text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-12 max-w-3xl">
-                    The Secret Weapons We Use to Scale You
+                <h2 className="text-4xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-12">
+                    The Secrets We Use to Scale You
                 </h2>
 
                 {/* 3x2 Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-px bg-[#e2e2e2]"
-                    style={{ borderRadius: '16px', overflow: 'hidden' }}
+                    style={{ borderRadius: '8px', overflow: 'hidden' }}
                 >
                     {services.map((service, i) => (
                         <div
@@ -92,7 +92,7 @@ export default function Method1() {
                             <div>{service.icon}</div>
 
                             {/* Title */}
-                            <h3 className="text-lg font-semibold text-[#0B1021] leading-[1.3]">
+                            <h3 className="text-lg font-medium text-[#0B1021] leading-[1.3]">
                                 {service.title}
                             </h3>
 

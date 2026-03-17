@@ -39,14 +39,14 @@ export default function Analytics() {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-4xl md:text-5xl font-semibold text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-12 max-w-3xl">
+                <h2 className="text-4xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-12 ">
                     The Secrets Behind These Numbers
                 </h2>
 
                 {/* Grid */}
                 <div
                     className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-px bg-[#e2e2e2]"
-                    style={{ borderRadius: '16px', overflow: 'hidden' }}
+                    style={{ borderRadius: '8px', overflow: 'hidden' }}
                 >
                     {results.map((result, i) => (
                         <div
@@ -54,10 +54,10 @@ export default function Analytics() {
                             className="bg-white p-8 flex flex-col justify-between gap-6"
                         >
                             <div>
-                                <span className="text-xs font-bold text-[#4040FF] uppercase tracking-wider mb-2 block">
+                                <span className="text-xs font-medium text-[#4040FF] uppercase tracking-wider mb-2 block">
                                     {result.company}
                                 </span>
-                                <h3 className="text-lg font-semibold text-[#0B1021] mb-3 leading-[1.3]">
+                                <h3 className="text-lg font-medium text-[#0B1021] mb-3 leading-[1.3]">
                                     {result.title}
                                 </h3>
                                 <p className="text-sm font-medium text-[#4A5578] leading-[1.6] mb-5">
@@ -65,7 +65,7 @@ export default function Analytics() {
                                 </p>
                                 <ul className="flex flex-col gap-2">
                                     {result.features.map((feature, j) => (
-                                        <li key={j} className="flex items-center gap-2 text-sm font-medium text-[#2D3A5C]">
+                                        <li key={j} className="flex items-center gap-2 text-sm font-normal text-[#2D3A5C]">
                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                                                 <path d="M2 7l3.5 3.5L12 3.5" stroke="#4040FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>

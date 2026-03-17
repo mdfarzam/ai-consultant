@@ -15,7 +15,7 @@ export default function CTA() {
 
                     {/* Bottom-right white card */}
                     <div
-                        className="absolute bottom-0 border-t-1 border-l-1 right-0 w-96 bg-[#0096FF]/80 text-white backdrop-blur-md p-8"
+                        className="absolute bottom-0 border-t-1 border-l-1 right-0 w-101 bg-[#0096FF]/80 text-white backdrop-blur-md p-8"
                         style={{
                             borderTopLeftRadius: '1.5rem',
                             // borderBottomRightRadius: '1.9rem',
@@ -24,13 +24,11 @@ export default function CTA() {
                             // boxShadow: '0 10px 24px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.9)',
                         }}
                     >
-                        <h3 className="text-xl font-semibold leading-[1.3] mb-3">
-                            Want to Know the Exact System We Used to Scale 30+ Businesses?
+                        <h3 className="text-xl font-medium leading-[1.3] mb-3">
+                            Want to Know the Exact System<br /> We Used to Scale 30+ Businesses?
                         </h3>
-                        <p className="text-sm font-medium leading-[1.7] mb-5">
-                            In just 15 minutes, we'll reveal the strategies behind our clients' biggest wins and show you exactly how we'd apply them to your business. No pitch, no pressure — just the playbook.
-                        </p>
-                        <a href="/contact" className="flex items-center gap-1.5 text-sm font-semibold ">
+
+                        <a href="/contact" className="flex items-center gap-1.5 text-sm font-normal ">
                             Get the Playbook — Free 15-Min Call
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                                 <path d="M3 7h8M7.5 3.5L11 7l-3.5 3.5" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -49,10 +47,10 @@ export default function CTA() {
                             boxShadow: '0 10px 24px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.04), inset 0 1px 0 rgba(255,255,255,0.9)',
                         }}
                     >
-                        <span className="bg-[#0B1021] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                        <span className="bg-[#0B1021] text-white text-xs font-bold px-3 py-1 rounded-full">
                             TRUST
                         </span>
-                        <p className="text-sm font-medium text-[#4A5578]">
+                        <p className="text-sm font-normal text-[#4A5578]">
                             Join the 850+ companies <span className="text-[#4040FF]">trusting</span> our business solutions services
                         </p>
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">

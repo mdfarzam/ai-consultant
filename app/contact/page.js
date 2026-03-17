@@ -54,7 +54,7 @@ export default function ContactPage() {
                                     Contact Us
                                 </span>
                             </div>
-                            <h1 className="text-5xl md:text-6xl font-semibold text-[#0B1021] leading-[1.1] tracking-[-0.02em]">
+                            <h1 className="text-5xl md:text-6xl font-medium text-[#0B1021] leading-[1.1] tracking-[-0.02em]">
                                 Ready to Scale?<br />Let's Talk Strategy.
                             </h1>
                         </div>
@@ -66,7 +66,7 @@ export default function ContactPage() {
                     {/* Main grid */}
                     <div
                         className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#e2e2e2]"
-                        style={{ borderRadius: '16px', overflow: 'hidden' }}
+                        style={{ borderRadius: '8px', overflow: 'hidden' }}
                     >
 
                         {/* Left — contact info + CTA */}
@@ -76,12 +76,12 @@ export default function ContactPage() {
                                     <div key={i} className="flex flex-col gap-1.5">
                                         <div className="flex items-center gap-2 mb-1">
                                             {item.icon}
-                                            <span className="text-xs font-bold text-[#0B1021] uppercase tracking-wider">
+                                            <span className="text-xs font-medium text-[#0B1021] uppercase tracking-wider">
                                                 {item.label}
                                             </span>
                                         </div>
                                         {item.href ? (
-                                            <a href={item.href} className="text-base font-semibold text-[#4040FF] hover:underline">
+                                            <a href={item.href} className="text-base font-medium text-[#4040FF] hover:underline">
                                                 {item.value}
                                             </a>
                                         ) : (
@@ -98,7 +98,7 @@ export default function ContactPage() {
                                 </p>
                                 <a
                                     href="#"
-                                    className="flex items-center gap-2 w-fit px-5 py-2.5 rounded-sm text-sm font-semibold bg-[#4040FF] hover:bg-[#2e2ee0] text-white transition-all shadow-[0_4px_14px_rgba(64,64,255,0.3)] border border-[#4040FF] border-b-[3px] border-b-[#2e2ee0] active:border-b active:translate-y-[2px]"
+                                    className="flex items-center gap-2 w-fit px-5 py-2.5 rounded-lg text-sm font-medium bg-[#4040FF] hover:bg-[#2e2ee0] text-white transition-all shadow-[0_4px_14px_rgba(64,64,255,0.3)] border border-[#4040FF] border-b-[3px] border-b-[#2e2ee0] active:border-b active:translate-y-[2px]"
                                 >
                                     Book on Calendly
                                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
@@ -110,7 +110,7 @@ export default function ContactPage() {
 
                         {/* Right — form (spans 2 cols) */}
                         <div className="md:col-span-2 bg-white p-10">
-                            <h3 className="text-lg font-semibold text-[#0B1021] mb-8">
+                            <h3 className="text-lg font-medium text-[#0B1021] mb-8">
                                 Send us a message
                             </h3>
 
@@ -118,7 +118,7 @@ export default function ContactPage() {
                                 {/* Name + Email row */}
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                     <div className="flex flex-col gap-1.5">
-                                        <label className="text-xs font-bold text-[#0B1021] uppercase tracking-wider">
+                                        <label className="text-xs font-medium text-[#0B1021] uppercase tracking-wider">
                                             Full Name
                                         </label>
                                         <input
@@ -129,7 +129,7 @@ export default function ContactPage() {
                                         />
                                     </div>
                                     <div className="flex flex-col gap-1.5">
-                                        <label className="text-xs font-bold text-[#0B1021] uppercase tracking-wider">
+                                        <label className="text-xs font-medium text-[#0B1021] uppercase tracking-wider">
                                             Work Email
                                         </label>
                                         <input
@@ -173,7 +173,7 @@ export default function ContactPage() {
                                     </p>
                                     <button
                                         type="submit"
-                                        className="flex items-center gap-2 px-6 py-3 rounded-sm text-sm font-semibold bg-[#0B1021] hover:bg-black text-white transition-all border border-[#0B1021] border-b-[3px] border-b-black active:border-b active:translate-y-[2px]"
+                                        className="flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium bg-[#0B1021] hover:bg-black text-white transition-all border border-[#0B1021] border-b-[3px] border-b-black active:border-b active:translate-y-[2px]"
                                     >
                                         Send Message
                                         <svg width="13" height="13" viewBox="0 0 13 13" fill="none">

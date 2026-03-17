@@ -8,11 +8,11 @@ export default function Footer() {
 
                     {/* Brand */}
                     <div className="max-w-xs">
-                        <h3 className="text-base font-semibold text-[#0B1021] mb-3">AK Consulting</h3>
+                        <h3 className="text-base font-medium text-[#0B1021] mb-3">AK Consulting</h3>
                         <p className="text-sm font-medium text-[#4A5578] leading-[1.7]">
                             AI-Powered Growth for Your Business. Helping businesses grow with AI-powered automation, stunning design, and smart digital strategies.
                         </p>
-                        <p className="mt-4 text-sm font-semibold text-[#0B1021]">
+                        <p className="mt-4 text-sm font-medium text-[#0B1021]">
                             ahmed@akconsulting.com
                         </p>
                     </div>
@@ -20,7 +20,7 @@ export default function Footer() {
                     {/* Links */}
                     <div className="flex gap-16">
                         <div className="flex flex-col gap-3">
-                            <p className="text-xs font-semibold text-[#0B1021] uppercase tracking-[0.1em]">Quick Links</p>
+                            <p className="text-xs font-medium text-[#0B1021] uppercase tracking-[0.1em]"> Quick Links </p>
                             <a href="/#services" className="text-sm font-medium text-[#4A5578] hover:text-[#0B1021] transition-colors">Services</a>
                             <a href="/#results" className="text-sm font-medium text-[#4A5578] hover:text-[#0B1021] transition-colors">Results</a>
                             <a href="/#clients" className="text-sm font-medium text-[#4A5578] hover:text-[#0B1021] transition-colors">Clients</a>
@@ -28,7 +28,7 @@ export default function Footer() {
                             <a href="/#faq" className="text-sm font-medium text-[#4A5578] hover:text-[#0B1021] transition-colors">FAQ</a>
                         </div>
                         <div className="flex flex-col gap-3">
-                            <p className="text-xs font-semibold text-[#0B1021] uppercase tracking-[0.1em]">Services</p>
+                            <p className="text-xs font-medium text-[#0B1021] uppercase tracking-[0.1em]">Services</p>
                             <a href="#" className="text-sm font-medium text-[#4A5578] hover:text-[#0B1021] transition-colors">AI Chatbots</a>
                             <a href="#" className="text-sm font-medium text-[#4A5578] hover:text-[#0B1021] transition-colors">Website Development</a>
                             <a href="#" className="text-sm font-medium text-[#4A5578] hover:text-[#0B1021] transition-colors">Brand Identity</a>

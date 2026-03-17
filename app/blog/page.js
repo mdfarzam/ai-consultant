@@ -16,18 +16,18 @@ export default function BlogPage() {
                         </span>
                     </div>
 
-                    <h1 className="text-5xl md:text-6xl font-semibold text-[#0B1021] mb-12">
+                    <h1 className="text-5xl md:text-6xl font-medium text-[#0B1021] mb-12">
                         Systems, AI, and <br /> the Future of Growth.
                     </h1>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                         {[1, 2, 3, 4, 5, 6].map((i) => (
                             <div key={i} className="group cursor-pointer">
-                                <div className="aspect-video bg-[#e2e2e2] rounded-2xl mb-5 overflow-hidden border border-[#e2e2e2]">
+                                <div className="aspect-video bg-[#e2e2e2] rounded-lg mb-5 overflow-hidden border border-[#e2e2e2]">
                                     <div className="w-full h-full bg-gradient-to-br from-[#4040FF]/10 to-[#0B1021]/10 group-hover:scale-105 transition-transform duration-500" />
                                 </div>
-                                <span className="text-xs font-bold text-[#4040FF] uppercase tracking-wider mb-2 block">AI Strategy</span>
-                                <h3 className="text-xl font-bold text-[#0B1021] mb-3 group-hover:text-[#4040FF] transition-colors leading-[1.3]">
+                                <span className="text-xs font-medium text-[#4040FF] uppercase tracking-wider mb-2 block">AI Strategy</span>
+                                <h3 className="text-xl font-medium text-[#0B1021] mb-3 group-hover:text-[#4040FF] transition-colors leading-[1.3]">
                                     How to Automate 80% of Your Customer Inquiries Without Sounding Like a Robot
                                 </h3>
 

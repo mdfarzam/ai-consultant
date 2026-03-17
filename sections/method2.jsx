@@ -80,7 +80,7 @@ export default function Method2() {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-4xl md:text-5xl font-semibold text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-12 max-w-3xl">
+                <h2 className="text-4xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-12 max-w-3xl">
                     Why Our Clients Never Leave
                 </h2>
 
@@ -89,7 +89,7 @@ export default function Method2() {
 
                     {/* Left card */}
                     <div className="shrink-0 w-72 flex flex-col gap-4">
-                        <div className="relative bg-white rounded-xl overflow-hidden flex-1 flex flex-col justify-end"
+                        <div className="relative bg-white rounded-lg overflow-hidden flex-1 flex flex-col justify-end"
                             style={{
                                 border: '1px solid #e2e2e2',
                                 boxShadow: '0 10px 24px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.04), inset 0 1px 0 rgba(255,255,255,0.9)'
@@ -99,14 +99,14 @@ export default function Method2() {
                             <div className="absolute inset-0 bg-gradient-to-t from-[#0B1021] via-[#0B1021]/30 to-transparent" />
                             <div className="absolute inset-0" style={{ boxShadow: 'inset 0 0 60px rgba(0,0,0,0.5)' }} />
                             <div className="relative z-10 p-5">
-                                <p className="text-xl font-bold text-white mb-1 tabular-nums">Built for Results & <br /> Growth
+                                <p className="text-xl font-medium text-white mb-1 tabular-nums">Built for Results & <br /> Growth
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     {/* Right — steps list */}
-                    <div className="flex-1 flex flex-col divide-y divide-[#E8E8E8]">
+                    <div className="flex-1 flex flex-col divide-y divide-[#C7D4F5]">
                         {steps.map((step, i) => (
                             <div key={i} className="flex items-start gap-4 py-6 first:pt-0 last:pb-0">
 
@@ -117,10 +117,10 @@ export default function Method2() {
 
                                 {/* Text */}
                                 <div className="flex-1">
-                                    <h3 className="text-base font-semibold text-[#0B1021] mb-1">
+                                    <h3 className="text-base font-medium text-[#0B1021] mb-1">
                                         {step.title}
                                     </h3>
-                                    <p className="text-sm font-medium text-[#4A5578] leading-[1.6]">
+                                    <p className="text-sm font-normal text-[#4A5578] leading-[1.6]">
                                         {step.description}
                                     </p>
                                 </div>
