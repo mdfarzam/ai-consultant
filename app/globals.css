@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Tabular nums for stats / data displays */
+.tabular-nums {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Text wrap balance for headings */
+h1,
+h2,
+h3 {
+    text-wrap: balance;
+}
