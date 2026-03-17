@@ -1,3 +1,4 @@
+import { LuCheckCircle } from 'react-icons/lu';
 const services = [
     {
         image: '/s1.jpg',
@@ -49,7 +50,7 @@ export default function Process() {
                         <div key={i} className="flex flex-col gap-4 group">
 
                             {/* Image */}
-                            <div className="w-full h-56 rounded-xl overflow-hidden bg-[#E5EDFF] border border-[#D0DDF7] shadow-[0_4px_15px_-4px_rgba(64,64,255,0.04)] group-hover:shadow-[0_8px_24px_-4px_rgba(64,64,255,0.08)] transition-shadow duration-300">
+                            <div className="w-full h-56 rounded-xl overflow-hidden bg-[#E5EDFF] border border-[#D0DDF7] shadow-sm group-hover:shadow-md transition-shadow duration-300">
                                 <img
                                     src={service.image}
                                     alt={service.title}
@@ -69,10 +70,7 @@ export default function Process() {
                             <ul className="flex flex-col gap-2">
                                 {service.features.map((feature, j) => (
                                     <li key={j} className="flex items-center gap-2 text-sm font-medium text-[#2D3A5C]">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                            <circle cx="8" cy="8" r="8" fill="#4040FF" />
-                                            <path d="M4.5 8l2.5 2.5 4.5-5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
+                                        <LuCheckCircle size={16} className="text-[#4040FF] shrink-0" />
                                         {feature}
                                     </li>
                                 ))}

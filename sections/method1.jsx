@@ -1,70 +1,42 @@
+import { LuBot, LuDatabase, LuGlobe, LuShare2, LuLayers, LuCpu } from 'react-icons/lu';
+
 const services = [
     {
         title: 'Plug-and-Play AI Chatbots',
         description: 'Turnkey sales machines that handle inquiries, qualify leads, and close deals 24/7 — without you lifting a finger.',
-        icon: (
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <circle cx="18" cy="18" r="9" stroke="#4040FF" strokeWidth="1.8" />
-                <path d="M12 18l4 4 8-8" stroke="#4040FF" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-        ),
+        icon: <LuBot size={32} className="text-[#4040FF]" />,
     },
     {
         title: 'Zero-Leads-Lost CRM',
         description: 'A fully automated pipeline that scores, follows up, and tracks every deal. We set it up, you just watch the sales come in.',
-        icon: (
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <rect x="8" y="8" width="20" height="20" rx="2" stroke="#4040FF" strokeWidth="1.8" />
-                <path d="M12 14h12M12 18h12M12 22h8" stroke="#4040FF" strokeWidth="1.8" strokeLinecap="round" />
-            </svg>
-        ),
+        icon: <LuDatabase size={32} className="text-[#4040FF]" />,
     },
     {
         title: 'Website Design & Development',
         description: 'We know exactly what makes visitors convert. Our sites are engineered with conversion secrets most agencies don\'t even know exist.',
-        icon: (
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <rect x="6" y="8" width="24" height="20" rx="3" stroke="#4040FF" strokeWidth="1.8" />
-                <path d="M6 14h24" stroke="#4040FF" strokeWidth="1.8" />
-                <circle cx="10" cy="11" r="1" fill="#4040FF" />
-                <circle cx="13" cy="11" r="1" fill="#4040FF" />
-            </svg>
-        ),
+        icon: <LuGlobe size={32} className="text-[#4040FF]" />,
     },
     {
         title: 'Social Media Management',
         description: 'The content strategies we use helped one client go from 0 to 250% more registrations. We\'ll show you how on a free call.',
-        icon: (
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <path d="M18 8c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10z" stroke="#4040FF" strokeWidth="1.8" />
-                <path d="M15 15l6 6M21 15l-6 6" stroke="#4040FF" strokeWidth="1.8" strokeLinecap="round" />
-            </svg>
-        ),
+        icon: <LuShare2 size={32} className="text-[#4040FF]" />,
     },
     {
         title: 'Brand Identity & Design',
         description: 'The brands we build don\'t just look good — they command premium pricing. Discover how we position our clients to charge more.',
-        icon: (
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <path d="M18 6l10 18H8L18 6z" stroke="#4040FF" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-        ),
+        icon: <LuLayers size={32} className="text-[#4040FF]" />,
     },
     {
         title: 'Turnkey Software Automations',
         description: 'Custom-built systems that eliminate 20+ hours of manual work per week. We handle the coding, you reap the time savings.',
-        icon: (
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <path d="M10 14l-4 4 4 4M26 14l4 4-4 4M15 24l6-12" stroke="#4040FF" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-        ),
+        icon: <LuCpu size={32} className="text-[#4040FF]" />,
     },
 ];
 
 export default function Method1() {
     return (
         <section id="services" className="w-full bg-[#FAFAFA] px-8 py-20">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto  ">
 
                 {/* Badge */}
                 <div className="flex items-center gap-2 mb-5">
@@ -86,7 +58,7 @@ export default function Method1() {
                     {services.map((service, i) => (
                         <div
                             key={i}
-                            className="bg-white p-8 flex flex-col gap-4"
+                            className="bg-[#F0F0F0] p-8 flex flex-col gap-4"
                         >
                             {/* Icon */}
                             <div>{service.icon}</div>

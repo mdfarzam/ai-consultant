@@ -37,7 +37,7 @@ export default function Services() {
 
                     {/* Left Text */}
                     <h2 className="text-2xl md:text-3xl font-normal text-[#0B1021] leading-[1.4]">
-                        Stop wasting money on agencies that deliver "pretty" sites with zero results. You need <span className="text-[#0096FF]">AI Chatbots </span> that close deals 24/7, CRM Pipelines that prevent lead leakage, and high-conversion systems that <span className="text-[#0096FF]">guarantee</span> your growth.
+                        Stop wasting money on agencies that deliver "pretty" sites with zero results. You need <span className="text-[#0096FF]">AI Chatbots </span> that close deals 24/7, <span className="text-[#0096FF]">CRM</span> Pipelines that prevent lead leakage, and high-conversion systems that <span className="text-[#0096FF]">guarantee</span> your growth.
                     </h2>
 
                     {/* Right Image */}

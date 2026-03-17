@@ -1,3 +1,5 @@
+import { LuCheck } from 'react-icons/lu';
+
 const results = [
     {
         title: '#4 Google Ranking',
@@ -51,7 +53,7 @@ export default function Analytics() {
                     {results.map((result, i) => (
                         <div
                             key={i}
-                            className="bg-white p-8 flex flex-col justify-between gap-6"
+                            className="bg-[#F0F0F0] p-8 flex flex-col justify-between gap-6"
                         >
                             <div>
                                 <span className="text-xs font-medium text-[#4040FF] uppercase tracking-wider mb-2 block">
@@ -66,16 +68,14 @@ export default function Analytics() {
                                 <ul className="flex flex-col gap-2">
                                     {result.features.map((feature, j) => (
                                         <li key={j} className="flex items-center gap-2 text-sm font-normal text-[#2D3A5C]">
-                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                                <path d="M2 7l3.5 3.5L12 3.5" stroke="#4040FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                            </svg>
+                                            <LuCheck size={14} className="text-[#4040FF] shrink-0" />
                                             {feature}
                                         </li>
                                     ))}
                                 </ul>
                             </div>
 
-                            <button className="w-fit px-5 py-2 rounded-lg bg-[#F5F5F5] border border-[#e2e2e2] text-sm font-medium text-[#0B1021] hover:bg-[#ECECEC] active:scale-[0.98] transition-all duration-200">
+                            <button className="w-fit px-5 py-2 rounded-lg bg-neutral-100 border border-neutral-300 text-sm font-medium text-[#0B1021] hover:bg-neutral-200/60 active:scale-[0.98] transition-all duration-200">
                                 View Case Study
                             </button>
                         </div>

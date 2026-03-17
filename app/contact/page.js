@@ -1,39 +1,25 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/sections/Footer";
+import { LuMail, LuMapPin, LuClock, LuChevronRight } from 'react-icons/lu';
 
 const contactInfo = [
     {
         label: 'Email',
         value: 'ahmed@akconsulting.com',
         href: 'mailto:ahmed@akconsulting.com',
-        icon: (
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <rect x="2" y="4" width="14" height="10" rx="2" stroke="#4040FF" strokeWidth="1.5" />
-                <path d="M2 6l7 5 7-5" stroke="#4040FF" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
-        ),
+        icon: <LuMail size={18} className="text-[#4040FF]" />,
     },
     {
         label: 'Location',
         value: 'Dubai, United Arab Emirates',
         href: null,
-        icon: (
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path d="M9 1.5C6.515 1.5 4.5 3.515 4.5 6c0 3.75 4.5 10.5 4.5 10.5S13.5 9.75 13.5 6c0-2.485-2.015-4.5-4.5-4.5z" stroke="#4040FF" strokeWidth="1.5" />
-                <circle cx="9" cy="6" r="1.5" stroke="#4040FF" strokeWidth="1.3" />
-            </svg>
-        ),
+        icon: <LuMapPin size={18} className="text-[#4040FF]" />,
     },
     {
         label: 'Response time',
         value: 'Within 24 hours',
         href: null,
-        icon: (
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <circle cx="9" cy="9" r="7" stroke="#4040FF" strokeWidth="1.5" />
-                <path d="M9 5v4l2.5 2.5" stroke="#4040FF" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
-        ),
+        icon: <LuClock size={18} className="text-[#4040FF]" />,
     },
 ];
 
@@ -98,12 +84,10 @@ export default function ContactPage() {
                                 </p>
                                 <a
                                     href="#"
-                                    className="flex items-center gap-2 w-fit px-5 py-2.5 rounded-lg text-sm font-medium bg-[#4040FF] hover:bg-[#2e2ee0] text-white transition-all shadow-[0_4px_14px_rgba(64,64,255,0.3)] border border-[#4040FF] border-b-[3px] border-b-[#2e2ee0] active:border-b active:translate-y-[2px]"
+                                    className="flex items-center gap-2 w-fit px-5 py-2.5 rounded-lg text-sm font-medium bg-[#4040FF] hover:bg-[#2e2ee0] text-white transition-all shadow-sm border border-[#4040FF] border-b-[3px] border-b-[#2e2ee0] active:border-b active:translate-y-[2px]"
                                 >
                                     Book on Calendly
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
-                                        <path d="M2.5 6.5h8M7 3l3.5 3.5L7 10" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
+                                    <LuChevronRight size={13} />
                                 </a>
                             </div>
                         </div>
@@ -176,9 +160,7 @@ export default function ContactPage() {
                                         className="flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium bg-[#0B1021] hover:bg-black text-white transition-all border border-[#0B1021] border-b-[3px] border-b-black active:border-b active:translate-y-[2px]"
                                     >
                                         Send Message
-                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
-                                            <path d="M2.5 6.5h8M7 3l3.5 3.5L7 10" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
+                                        <LuChevronRight size={18} />
                                     </button>
                                 </div>
                             </form>

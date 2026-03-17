@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { LuStar } from 'react-icons/lu';
 
 export default function Hero() {
     return (
@@ -29,7 +30,7 @@ export default function Hero() {
             <div className="my-8 flex items-center gap-4 flex-wrap justify-center">
                 <Link
                     href="/contact"
-                    className="px-7 py-3.5 rounded-lg text-sm font-medium text-white bg-[#4040FF] hover:bg-[#2e2ee0] transition-all shadow-[0_8px_25px_rgba(64,64,255,0.35)] hover:-translate-y-0.5 border border-[#4040FF] border-b-[3px] border-b-[#2e2ee0] active:border-b active:translate-y-[2px]"
+                    className="px-7 py-3.5 rounded-lg text-sm font-medium text-white bg-[#4040FF] hover:bg-[#2e2ee0] transition-all shadow-sm hover:-translate-y-0.5 border border-[#4040FF] border-b-[3px] border-b-[#2e2ee0] active:border-b active:translate-y-[2px]"
                 >
                     Book a Free Call
                 </Link>
@@ -53,12 +54,7 @@ export default function Hero() {
                 {/* Stars */}
                 <div className="flex items-center gap-1">
                     {[...Array(5)].map((_, i) => (
-                        <svg key={i} width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path
-                                d="M8 1l1.85 3.75L14 5.5l-3 2.92.71 4.13L8 10.4l-3.71 2.15L5 8.42 2 5.5l4.15-.75L8 1z"
-                                fill="#1A1A1A"
-                            />
-                        </svg>
+                        <LuStar key={i} size={16} className="fill-[#1A1A1A] text-[#1A1A1A]" />
                     ))}
                 </div>
 

@@ -1,4 +1,5 @@
 import Marquee from 'react-fast-marquee';
+import { LuStar } from 'react-icons/lu';
 
 const testimonials = [
     {
@@ -49,15 +50,11 @@ function StarRating({ rating }) {
     return (
         <div className="flex items-center gap-0.5 mb-4">
             {[1, 2, 3, 4, 5].map((star) => (
-                <svg key={star} width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path
-                        d="M8 1.5l1.545 3.13 3.455.502-2.5 2.437.59 3.44L8 9.385l-3.09 1.624.59-3.44L3 5.132l3.455-.502L8 1.5z"
-                        fill={star <= rating ? '#0096FF' : 'none'}
-                        stroke={star <= rating ? '#0096FF' : '#d0d0d0'}
-                        strokeWidth="1.2"
-                        strokeLinejoin="round"
-                    />
-                </svg>
+                <LuStar
+                    key={star}
+                    size={16}
+                    className={star <= rating ? 'fill-[#0096FF] text-[#0096FF]' : 'text-neutral-300'}
+                />
             ))}
         </div>
     );

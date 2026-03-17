@@ -1,3 +1,5 @@
+import { LuChevronRight } from 'react-icons/lu';
+
 export default function CTA() {
     return (
         <section className="w-full bg-[#FAFAFA] py-20 px-8">
@@ -5,10 +7,9 @@ export default function CTA() {
 
                 {/* Main block */}
                 <div
-                    className="relative w-6xl flex items-center justify-center mx-auto h-[600px] rounded-4xl overflow-hidden bg-[#e0e0e0]"
+                    className="relative w-6xl flex items-center justify-center mx-auto h-[600px] rounded-4xl overflow-hidden bg-[#e0e0e0] shadow-sm"
                     style={{
                         border: '1px solid #e2e2e2',
-                        boxShadow: '0 10px 24px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.04), inset 0 1px 0 rgba(255,255,255,0.9)',
                     }}
                 >
                     <img src="/cta.png" alt="" className="absolute inset-0 w-full h-full object-cover" />
@@ -30,9 +31,7 @@ export default function CTA() {
 
                         <a href="/contact" className="flex items-center gap-1.5 text-sm font-normal ">
                             Get the Playbook — Free 15-Min Call
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                <path d="M3 7h8M7.5 3.5L11 7l-3.5 3.5" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
+                            <LuChevronRight size={16} className="text-[#1A1A1A]" />
                         </a>
                     </div>
 
@@ -41,10 +40,9 @@ export default function CTA() {
                 {/* Trust bar */}
                 <div className="mt-8 flex justify-center">
                     <div
-                        className="flex items-center gap-3 bg-white rounded-full px-2 py-2"
+                        className="flex items-center gap-3 bg-white rounded-full px-2 py-2 shadow-sm"
                         style={{
                             border: '1px solid #e2e2e2',
-                            boxShadow: '0 10px 24px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.04), inset 0 1px 0 rgba(255,255,255,0.9)',
                         }}
                     >
                         <span className="bg-[#0B1021] text-white text-xs font-bold px-3 py-1 rounded-full">
@@ -53,9 +51,7 @@ export default function CTA() {
                         <p className="text-sm font-normal text-[#4A5578]">
                             Join the 850+ companies <span className="text-[#4040FF]">trusting</span> our business solutions services
                         </p>
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                            <path d="M3 7h8M7.5 3.5L11 7l-3.5 3.5" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
+                        <LuChevronRight size={16} className="text-[#1A1A1A]" />
                     </div>
                 </div>
 

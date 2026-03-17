@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { LuPlus, LuMinus } from 'react-icons/lu';
 
 const faqs = [
     {
@@ -59,17 +60,16 @@ export default function FAQ() {
                     {faqs.map((faq, i) => (
                         <div
                             key={i}
-                            className="bg-white rounded-lg px-6 py-5 cursor-pointer transition-all duration-200"
+                            className="bg-white rounded-lg px-6 py-5 cursor-pointer transition-all duration-200 shadow-sm"
                             style={{
                                 border: '1px solid #e2e2e2',
-                                boxShadow: '0 10px 24px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.04), inset 0 1px 0 rgba(255,255,255,0.9)',
                             }}
                             onClick={() => toggle(i)}
                         >
                             <div className="flex items-center justify-between gap-4">
                                 <p className="text-base font-medium text-[#0B1021]">{faq.question}</p>
-                                <span className="text-[#0096FF] text-2xl shrink-0">
-                                    {openIndex === i ? '−' : '+'}
+                                <span className="text-[#0096FF] shrink-0">
+                                    {openIndex === i ? <LuMinus size={20} /> : <LuPlus size={20} />}
                                 </span>
                             </div>
                             {openIndex === i && (
