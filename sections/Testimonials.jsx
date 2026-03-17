@@ -94,8 +94,7 @@ function TestimonialCard({ testimonial }) {
 
 export default function Testimonials() {
     return (
-        <section id="clients" className="w-full bg-[#FAFAFA] py-20">
-
+        <section id="clients" className="w-full bg-[#FAFAFA] py-20" style={{ maskImage: 'linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%)' }}>
             {/* Header */}
             <div className="max-w-7xl mx-auto px-8 text-center mb-14">
                 <div className="flex items-center justify-center gap-2 mb-4">

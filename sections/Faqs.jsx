@@ -57,28 +57,38 @@ export default function FAQ() {
 
                 {/* FAQ list */}
                 <div className="flex flex-col gap-3">
-                    {faqs.map((faq, i) => (
-                        <div
-                            key={i}
-                            className="bg-white rounded-lg px-6 py-5 cursor-pointer transition-all duration-200 shadow-sm"
-                            style={{
-                                border: '1px solid #e2e2e2',
-                            }}
-                            onClick={() => toggle(i)}
-                        >
-                            <div className="flex items-center justify-between gap-4">
-                                <p className="text-base font-medium text-[#0B1021]">{faq.question}</p>
-                                <span className="text-[#0096FF] shrink-0">
-                                    {openIndex === i ? <LuMinus size={20} /> : <LuPlus size={20} />}
-                                </span>
+                    {faqs.map((faq, i) => {
+                        const isOpen = openIndex === i;
+                        return (
+                            <div
+                                key={i}
+                                className="bg-white rounded-lg px-6 py-5 cursor-pointer shadow-sm"
+                                style={{ border: '1px solid #e2e2e2' }}
+                                onClick={() => toggle(i)}
+                            >
+                                <div className="flex items-center justify-between gap-4">
+                                    <p className="text-base font-medium text-[#0B1021]">{faq.question}</p>
+                                    <span className="text-[#0096FF] shrink-0">
+                                        {isOpen ? <LuMinus size={20} /> : <LuPlus size={20} />}
+                                    </span>
+                                </div>
+
+                                {/* Always rendered — animated via maxHeight + opacity */}
+                                <div
+                                    className="overflow-hidden"
+                                    style={{
+                                        maxHeight: isOpen ? '300px' : '0px',
+                                        opacity: isOpen ? 1 : 0,
+                                        transition: 'max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1)',
+                                    }}
+                                >
+                                    <p className="mt-3 text-base font-normal text-[#4A5578] leading-[1.5]">
+                                        {faq.answer}
+                                    </p>
+                                </div>
                             </div>
-                            {openIndex === i && (
-                                <p className="mt-3 text-base font-normal text-[#4A5578] leading-[1.5]">
-                                    {faq.answer}
-                                </p>
-                            )}
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
 
             </div>
