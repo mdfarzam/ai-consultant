@@ -33,7 +33,7 @@ const services = [
     },
 ];
 
-export default function Method1() {
+export default function OurArsenal() {
     return (
         <section id="services" className="w-full bg-[#FAFAFA] px-5 md:px-8 py-14 md:py-20">
             <div className="max-w-7xl mx-auto  ">
