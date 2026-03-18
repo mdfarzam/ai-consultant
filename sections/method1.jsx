@@ -35,7 +35,7 @@ const services = [
 
 export default function Method1() {
     return (
-        <section id="services" className="w-full bg-[#FAFAFA] px-8 py-20">
+        <section id="services" className="w-full bg-[#FAFAFA] px-5 md:px-8 py-14 md:py-20">
             <div className="max-w-7xl mx-auto  ">
 
                 {/* Badge */}
@@ -47,8 +47,7 @@ export default function Method1() {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-4xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-12">
-                    The Secrets We Use to Scale You
+                <h2 className="text-3xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-8 md:mb-12">                    The Secrets We Use to Scale You
                 </h2>
 
                 {/* 3x2 Grid */}

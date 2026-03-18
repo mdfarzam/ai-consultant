@@ -39,10 +39,9 @@ const steps = [
     },
 ];
 
-
 export default function Method2() {
     return (
-        <section className="w-full bg-[#FAFAFA] px-8 py-20">
+        <section className="w-full bg-[#FAFAFA] px-5 md:px-8 py-14 md:py-20">
             <div className="max-w-7xl mx-auto">
 
                 {/* Badge */}
@@ -54,52 +53,49 @@ export default function Method2() {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-4xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-12 max-w-3xl">
+                <h2 className="text-3xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-8 md:mb-12 max-w-3xl">
                     Why Our Clients Never Leave
                 </h2>
 
-                {/* Flex row */}
-                <div className="flex items-stretch gap-8 ">
+                {/* Layout */}
+                <div className="flex items-stretch gap-8">
 
-                    {/* Left card */}
-                    <div className="shrink-0 w-72 flex flex-col gap-4">
+                    {/* Left card — hidden on mobile */}
+                    <div className="hidden md:flex shrink-0 w-72 flex-col gap-4">
                         <div className="relative bg-white rounded-lg overflow-hidden flex-1 flex flex-col justify-end shadow-sm"
-                            style={{
-                                border: '1px solid #e2e2e2',
-                            }}
+                            style={{ border: '1px solid #e2e2e2' }}
                         >
                             <img src="/akhi.png" alt="" className="absolute inset-0 w-full h-full object-cover" />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#0B1021] via-[#0B1021]/30 to-transparent" />
                             <div className="absolute inset-0" style={{ boxShadow: 'inset 0 0 60px rgba(0,0,0,0.5)' }} />
                             <div className="relative z-10 p-5">
-                                <p className="text-xl font-regular text-white mb-1 tabular-nums">Experts built for <br />growth & results
-                                </p>
+                                <p className="text-xl font-regular text-white mb-1 tabular-nums">Experts built for <br />growth & results</p>
                             </div>
                         </div>
                     </div>
 
-                    {/* Right — steps list */}
+                    {/* Steps list — full width on mobile */}
                     <div className="flex-1 flex flex-col divide-y divide-[#C7D4F5]">
                         {steps.map((step, i) => (
-                            <div key={i} className="flex items-start gap-4 py-6 first:pt-0 last:pb-0">
+                            <div key={i} className="flex items-start gap-3 md:gap-4 py-5 md:py-6 first:pt-0 last:pb-0">
 
                                 {/* Icon */}
-                                <div className="shrink-0 w-10 h-10 bg-white border border-[#E8E8E8] rounded-lg flex items-center justify-center shadow-sm">
+                                <div className="shrink-0 w-9 h-9 md:w-10 md:h-10 bg-white border border-[#E8E8E8] rounded-lg flex items-center justify-center shadow-sm">
                                     {step.icon}
                                 </div>
 
                                 {/* Text */}
                                 <div className="flex-1">
-                                    <h3 className="text-base font-medium text-[#0B1021] mb-1">
+                                    <h3 className="text-sm md:text-base font-medium text-[#0B1021] mb-1">
                                         {step.title}
                                     </h3>
-                                    <p className="text-sm font-normal text-[#4A5578] leading-[1.6]">
+                                    <p className="text-xs md:text-sm font-normal text-[#4A5578] leading-[1.6]">
                                         {step.description}
                                     </p>
                                 </div>
 
                                 {/* Number */}
-                                <span className="shrink-0 text-sm font-medium text-[#0096FF]/80">
+                                <span className="shrink-0 text-xs md:text-sm font-medium text-[#0096FF]/80">
                                     {step.number}
                                 </span>
 

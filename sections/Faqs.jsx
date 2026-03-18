@@ -36,7 +36,7 @@ export default function FAQ() {
     const toggle = (i) => setOpenIndex(openIndex === i ? null : i);
 
     return (
-        <section id="faq" className="w-full bg-[#FAFAFA] px-8 py-20">
+        <section id="faq" className="w-full bg-[#FAFAFA] px-5 md:px-8 py-14 md:py-20">
             <div className="max-w-5xl mx-auto">
 
                 {/* Badge */}
@@ -48,10 +48,10 @@ export default function FAQ() {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-4xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] text-center mb-4">
+                <h2 className="text-3xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] text-center mb-4">
                     Got Questions?
                 </h2>
-                <p className="text-sm font-normal text-[#4A5578] leading-[1.7] text-center mb-10">
+                <p className="text-sm font-normal text-[#4A5578] leading-[1.7] text-center mb-8 md:mb-10">
                     We've worked with 30+ businesses — so we know what comes up before your first call. Here's what you should know.
                 </p>
 
@@ -62,18 +62,16 @@ export default function FAQ() {
                         return (
                             <div
                                 key={i}
-                                className="bg-white rounded-lg px-6 py-5 cursor-pointer shadow-sm"
+                                className="bg-white rounded-lg px-4 md:px-6 py-4 md:py-5 cursor-pointer shadow-sm"
                                 style={{ border: '1px solid #e2e2e2' }}
                                 onClick={() => toggle(i)}
                             >
                                 <div className="flex items-center justify-between gap-4">
-                                    <p className="text-base font-medium text-[#0B1021]">{faq.question}</p>
+                                    <p className="text-sm md:text-base font-medium text-[#0B1021]">{faq.question}</p>
                                     <span className="text-[#0096FF] shrink-0">
-                                        {isOpen ? <LuMinus size={20} /> : <LuPlus size={20} />}
+                                        {isOpen ? <LuMinus size={18} /> : <LuPlus size={18} />}
                                     </span>
                                 </div>
-
-                                {/* Always rendered — animated via maxHeight + opacity */}
                                 <div
                                     className="overflow-hidden"
                                     style={{
@@ -82,7 +80,7 @@ export default function FAQ() {
                                         transition: 'max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1)',
                                     }}
                                 >
-                                    <p className="mt-3 text-base font-normal text-[#4A5578] leading-[1.5]">
+                                    <p className="mt-3 text-sm md:text-base font-normal text-[#4A5578] leading-[1.5]">
                                         {faq.answer}
                                     </p>
                                 </div>

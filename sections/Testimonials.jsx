@@ -52,7 +52,7 @@ function StarRating({ rating }) {
             {[1, 2, 3, 4, 5].map((star) => (
                 <LuStar
                     key={star}
-                    size={16}
+                    size={14}
                     className={star <= rating ? 'fill-[#0096FF] text-[#0096FF]' : 'text-neutral-300'}
                 />
             ))}
@@ -63,29 +63,29 @@ function StarRating({ rating }) {
 function TestimonialCard({ testimonial }) {
     return (
         <div
-            className="shrink-0 bg-white rounded-lg p-7 flex flex-col justify-between mx-2"
+            className="shrink-0 bg-white rounded-lg p-5 md:p-7 flex flex-col justify-between mx-2"
             style={{
-                width: '320px',
-                height: '220px',
+                width: '260px',
+                height: '200px',
                 border: '1px solid #e2e2e2',
             }}
         >
             <div>
                 <StarRating rating={testimonial.rating} />
-                <p className="text-[14px] font-medium text-[#0B1021] leading-[1.6] line-clamp-3">
+                <p className="text-[13px] md:text-[14px] font-medium text-[#0B1021] leading-[1.6] line-clamp-3">
                     "{testimonial.text}"
                 </p>
             </div>
-            <div className="flex items-center gap-3 pt-3 border-t border-[#f0f0f0]">
+            <div className="flex items-center gap-2 pt-3 border-t border-[#f0f0f0]">
                 <img
                     src={testimonial.avatar}
                     alt={testimonial.name}
-                    className="w-9 h-9 rounded-full object-cover shrink-0"
+                    className="w-8 h-8 rounded-full object-cover shrink-0"
                     style={{ border: '1px solid #e2e2e2' }}
                 />
                 <div>
-                    <p className="text-sm font-medium text-[#0B1021]">{testimonial.name}</p>
-                    <p className="text-xs font-medium text-[#7B8AB8]">{testimonial.role}</p>
+                    <p className="text-xs font-medium text-[#0B1021]">{testimonial.name}</p>
+                    <p className="text-[11px] font-medium text-[#7B8AB8]">{testimonial.role}</p>
                 </div>
             </div>
         </div>
@@ -94,16 +94,23 @@ function TestimonialCard({ testimonial }) {
 
 export default function Testimonials() {
     return (
-        <section id="clients" className="w-full bg-[#FAFAFA] py-20" style={{ maskImage: 'linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%)' }}>
+        <section
+            id="clients"
+            className="w-full bg-[#FAFAFA] py-14 md:py-20"
+            style={{
+                maskImage: 'linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%)',
+            }}
+        >
             {/* Header */}
-            <div className="max-w-7xl mx-auto px-8 text-center mb-14">
+            <div className="max-w-7xl mx-auto px-5 md:px-8 text-center mb-10 md:mb-14">
                 <div className="flex items-center justify-center gap-2 mb-4">
                     <span className="w-2 h-2 bg-[#4040FF]" />
                     <span className="text-xs font-medium tracking-[0.12em] uppercase text-[#4A5578]">
                         Testimonials
                     </span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-4">
+                <h2 className="text-3xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-4">
                     What Our Clients Say
                 </h2>
                 <p className="text-sm font-normal text-[#4A5578] leading-[1.7] max-w-lg mx-auto">

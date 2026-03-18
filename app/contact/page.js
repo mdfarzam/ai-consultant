@@ -28,11 +28,11 @@ export default function ContactPage() {
         <main className="min-h-screen bg-[#FAFAFA]">
             <Navbar />
 
-            <section className="pt-32 pb-20 px-8">
+            <section className="pt-24 md:pt-32 pb-14 md:pb-20 px-5 md:px-8">
                 <div className="max-w-7xl mx-auto">
 
                     {/* Top header row */}
-                    <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+                    <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-6 mb-10 md:mb-16">
                         <div>
                             <div className="flex items-center gap-2 mb-5">
                                 <span className="w-2 h-2 bg-[#4040FF]" />
@@ -40,7 +40,7 @@ export default function ContactPage() {
                                     Contact Us
                                 </span>
                             </div>
-                            <h1 className="text-5xl md:text-6xl font-medium text-[#0B1021] leading-[1.1] tracking-[-0.02em]">
+                            <h1 className="text-3xl sm:text-4xl md:text-6xl font-medium text-[#0B1021] leading-[1.1] tracking-[-0.02em]">
                                 Ready to Scale?<br />Let's Talk Strategy.
                             </h1>
                         </div>
@@ -56,8 +56,8 @@ export default function ContactPage() {
                     >
 
                         {/* Left — contact info + CTA */}
-                        <div className="bg-white p-10 flex flex-col justify-between gap-10">
-                            <div className="flex flex-col gap-8">
+                        <div className="bg-white p-6 md:p-10 flex flex-col justify-between gap-8 md:gap-10">
+                            <div className="flex flex-col gap-6 md:gap-8">
                                 {contactInfo.map((item, i) => (
                                     <div key={i} className="flex flex-col gap-1.5">
                                         <div className="flex items-center gap-2 mb-1">
@@ -93,14 +93,14 @@ export default function ContactPage() {
                         </div>
 
                         {/* Right — form (spans 2 cols) */}
-                        <div className="md:col-span-2 bg-white p-10">
-                            <h3 className="text-lg font-medium text-[#0B1021] mb-8">
+                        <div className="md:col-span-2 bg-white p-6 md:p-10">
+                            <h3 className="text-base md:text-lg font-medium text-[#0B1021] mb-6 md:mb-8">
                                 Send us a message
                             </h3>
 
-                            <form className="flex flex-col gap-5">
+                            <form className="flex flex-col gap-4 md:gap-5">
                                 {/* Name + Email row */}
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
                                     <div className="flex flex-col gap-1.5">
                                         <label className="text-xs font-medium text-[#0B1021] uppercase tracking-wider">
                                             Full Name
@@ -127,7 +127,7 @@ export default function ContactPage() {
 
                                 {/* Company */}
                                 <div className="flex flex-col gap-1.5">
-                                    <label className="text-xs font-bold text-[#0B1021] uppercase tracking-wider">
+                                    <label className="text-xs font-medium text-[#0B1021] uppercase tracking-wider">
                                         Company <span className="text-[#B8C4E0] normal-case font-medium tracking-normal">(optional)</span>
                                     </label>
                                     <input
@@ -140,24 +140,24 @@ export default function ContactPage() {
 
                                 {/* Message */}
                                 <div className="flex flex-col gap-1.5">
-                                    <label className="text-xs font-bold text-[#0B1021] uppercase tracking-wider">
+                                    <label className="text-xs font-medium text-[#0B1021] uppercase tracking-wider">
                                         How can we help?
                                     </label>
                                     <textarea
                                         placeholder="Tell us about your project, goals, or challenges..."
                                         className="w-full px-4 py-3 rounded-lg bg-[#FAFAFA] text-sm font-medium text-[#0B1021] placeholder:text-[#B8C4E0] focus:outline-none focus:ring-2 focus:ring-[#4040FF]/20 transition-all resize-none"
-                                        style={{ border: '1px solid #e2e2e2', minHeight: '140px' }}
+                                        style={{ border: '1px solid #e2e2e2', minHeight: '120px' }}
                                     />
                                 </div>
 
                                 {/* Submit */}
-                                <div className="flex items-center justify-between gap-4 pt-2">
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pt-2">
                                     <p className="text-xs font-medium text-[#B8C4E0]">
                                         We'll get back to you within 24 hours.
                                     </p>
                                     <button
                                         type="submit"
-                                        className="flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium bg-[#0B1021] hover:bg-black text-white transition-all border border-[#0B1021] border-b-[3px] border-b-black active:border-b active:translate-y-[2px]"
+                                        className="flex items-center justify-center gap-2 w-full sm:w-fit px-6 py-3 rounded-lg text-sm font-medium bg-[#0B1021] hover:bg-black text-white transition-all border border-[#0B1021] border-b-[3px] border-b-black active:border-b active:translate-y-[2px]"
                                     >
                                         Send Message
                                         <LuChevronRight size={18} />

@@ -17,8 +17,7 @@ export default function Videos() {
                 {videos.map((video, i) => (
                     <div
                         key={i}
-                        className="w-74 h-120 rounded-lg overflow-hidden shrink-0 bg-white shadow-sm transition-shadow duration-300 mx-2"
-                        style={{
+                        className="w-44 h-72 md:w-74 md:h-120 rounded-lg overflow-hidden shrink-0 bg-white shadow-sm transition-shadow duration-300 mx-2" style={{
                             border: '1px solid #e2e2e2',
                         }}
                     >

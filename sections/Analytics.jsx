@@ -29,7 +29,7 @@ const results = [
 
 export default function Analytics() {
     return (
-        <section className="w-full bg-[#FAFAFA] px-8 py-20">
+        <section className="w-full bg-[#FAFAFA] px-5 md:px-8 py-14 md:py-20">
             <div className="max-w-7xl mx-auto">
 
                 {/* Badge */}
@@ -41,8 +41,7 @@ export default function Analytics() {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-4xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-12 ">
-                    The Secrets Behind These Numbers
+                <h2 className="text-4xl md:text-5xl font-medium text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-12 ">                    The Secrets Behind These Numbers
                 </h2>
 
                 {/* Grid */}

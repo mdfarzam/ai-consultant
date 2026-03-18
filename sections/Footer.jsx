@@ -1,10 +1,10 @@
 export default function Footer() {
     return (
-        <footer className="w-full bg-white border-t border-[#E5EDFF] px-8 py-12">
+        <footer className="w-full bg-white border-t border-[#e2e2e2] px-5 md:px-8 py-10 md:py-12">
             <div className="max-w-7xl mx-auto flex flex-col gap-10">
 
                 {/* Top row */}
-                <div className="flex items-start justify-between gap-12">
+                <div className="flex flex-col md:flex-row items-start justify-between gap-8 md:gap-12">
 
                     {/* Brand */}
                     <div className="max-w-xs">
@@ -18,9 +18,9 @@ export default function Footer() {
                     </div>
 
                     {/* Links */}
-                    <div className="flex gap-16">
+                    <div className="flex gap-10 md:gap-16">
                         <div className="flex flex-col gap-3">
-                            <p className="text-xs font-medium text-[#0B1021] uppercase tracking-[0.1em]"> Quick Links </p>
+                            <p className="text-xs font-medium text-[#0B1021] uppercase tracking-[0.1em]">Quick Links</p>
                             <a href="/#services" className="text-sm font-medium text-[#4A5578] hover:text-[#0B1021] transition-colors">Services</a>
                             <a href="/#results" className="text-sm font-medium text-[#4A5578] hover:text-[#0B1021] transition-colors">Results</a>
                             <a href="/#clients" className="text-sm font-medium text-[#4A5578] hover:text-[#0B1021] transition-colors">Clients</a>
@@ -40,7 +40,7 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom row */}
-                <div className="border-t border-[#E5EDFF] pt-6 flex items-center justify-between">
+                <div className="border-t border-[#e2e2e2] pt-6 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
                     <p className="text-xs font-medium text-[#7B8AB8]">
                         © {new Date().getFullYear()} AK Consulting. All rights reserved.
                     </p>

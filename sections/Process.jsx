@@ -28,7 +28,7 @@ const services = [
 
 export default function Process() {
     return (
-        <section className="w-full bg-[#FAFBFF] px-8 py-20">
+        <section className="w-full bg-[#FAFBFF] px-5 md:px-8 py-14 md:py-20">
             <div className="max-w-7xl mx-auto">
 
                 {/* Badge */}
@@ -40,12 +40,11 @@ export default function Process() {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-4xl md:text-5xl font-semibold text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-12 max-w-3xl">
-                    Tailored solutions to unlock your business potential
+                <h2 className="text-3xl md:text-5xl font-semibold text-[#0B1021] leading-[1.15] tracking-[-0.02em] mb-8 md:mb-12 max-w-3xl">                    Tailored solutions to unlock your business potential
                 </h2>
 
                 {/* Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                     {services.map((service, i) => (
                         <div key={i} className="flex flex-col gap-4 group">
 
